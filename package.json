@@ -1,0 +1,16 @@
+{
+  "name": "bleb",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "scripts": {
+    "scan": "node index.is",
+    "start": "node index.js -code-pairing"
+  },
+  "author": "sen",
+  "license": "ISC",
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.4.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
