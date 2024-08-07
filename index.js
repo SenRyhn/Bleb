@@ -20,6 +20,7 @@ const pair = process.argv.includes("-code-pairing");
         console.log("=> Your pairing code is:", pairingCode)
       }, 3000)
       }
+    senr.ev.on("messages.upsert", ({ messages }) => require("./events/messages.js")(senr, messages[0]))
     senr.ev.on("connection.update", c => {
         const { connection, lastDisconnect } = c;
         if(connection === "close") {
